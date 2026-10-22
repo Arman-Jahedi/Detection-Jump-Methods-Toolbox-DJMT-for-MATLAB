@@ -3,14 +3,21 @@ The objective of the DJMT toolbox is to develop a set of functions in MATLAB pro
 <img width="1522" height="916" alt="Detection Jumps Methods Toolbox for MATLAB" src="https://github.com/user-attachments/assets/fcf3c6c2-72c3-4c0f-9c22-42d0ce15170b" />
 
 Performing SNHT and SNHTM Functions:
+
 Two MATLAB functions named SNHT and SNHTM were developed and included in the toolbox entitled 'Detection Jumps Methods Toolbox for MATLAB'. These functions are designed to operate on time series data provided in matrix format (double). Since MATLAB performs calculations column-wise by default, the input matrix should be organized with each time series stored as separate column.
 The function 'SNHT' performs the SNHT on a Sample time series, while 'SNHTM' is capable of processing an entire matrix containing one to a very large number of time series simultaneously (limited primarily by the available CPU and RAM resources of the computer). The names of the functions are derived from the initial letters of Standard Normal Homogeneity Test with the additional 'M' in SNHTM referring to Matrix.
 These functions can be called in the MATLAB Command Window as follows: 
+
 >> [T,TMAX]=SNHTM(var);
+>> 
 The 'SNHTM' function is capable of performing the SNHT on one or multiple time series at once. It accepts both Sample vectors and matrices (where each column represents an individual time series), allowing efficient batch processing of any number of datasets.
+
 >> [T,TMAX]=SNHT(var);
+>> 
 The 'SNHT' function can only be applied to a Sample time series.
+
 >>  Tip points and recommendation:
+>> 
 It is strongly recommended to use the 'SNHTM' function instead of the 'SNHT'. 
 When using 'SNHTM function, make sure that the folder containing the function is added to the MATLAB search path.
 Users should be writing own matrix name in Workspace environment instead of 'var'. 
@@ -20,22 +27,32 @@ TMAX: The maximum value among all test statistics.
 These values are essential for detecting potential points in the homogeneity of the time series.
 
 Performing CUMDEVS and CUMDEVM Functions:
+
 In this toolbox, two MATLAB function were developed to implement the CDT: CUMDES and CUMDEVM. The name CUMDEVS is derived from the initial letters of the words Cumulative and Deviation. In both function names, the letters S and M indicate Sample and Matrix, respectively. The function CUMDEVS is designed to apply the CDT to a Sample time series, whereas CUMDEVM is developed to process multiple time series arranges in columns of a matrix, extending from one to an arbitrary number of time series. 
 The application of this method to a time series matrix in the MATLAB Command Window is illustrated in below:
+
 >> [Q,QMAX]=CUMDEVM(var);
+>> 
 The function CUMDEVM is designed for application to a data matrix containing one or multiple time series (with n series organized in columns).
+
 >> [Q,QMAX]=CUMDEVS(var);
+>> 
 However, the CUMDEVS function is designed for application to a Sample time series, corresponding to one column of the data matrix.
+
 Tips Points and Recommendation:
+
 The use of the CUMDEVM function is recommended for most applications. Users should replace 'var' with the name of their own data matrix stored in the MATLAB Workspace.
 Upon completion of the CDT, the CUMDEVM function returns two variables in the MATLAB Workspace: Q and QMAX. The variable Q contains the calculated test statistics for all of time series in the input matrix. The variable QMAX contains the maximum absolute test statistic for each time series, normalized by the square root of the corresponding sample size (Q/√n). These values can subsequently be compared with the critical values reported by Buishand (1982) to assess the homogeneity of the time series.
 
 Performing worsleyS and worsleyM Functions:
 Building on the explanation of how the Worsley likelihood ration test operates on time series data, two functions have been developed: worsleyS and worsleyM. These functions perform the Worsley test calculations on 1 to 'n' time series. The function name worsleyS is derived from Worsley combined with the first letter of Sample. Similarly, an effort has been made to maintain naming consistency with other test functions. The function worsleyM follows the same pattern, except that its last letter is taken from the word Matrix.
 This test can also be executed directly in the Command Window as follows:
+
 >> [V,W]=worsleyM(var);
 The function worsleyM can be applied to any matrix, whether it contains a Sample time series or a very large number of time series.
->> [V,W]=worsleyS(var); 
+>> 
+>> [V,W]=worsleyS(var);
+>> 
 Whereas the worsleyS function can only be applied to a Sample time series, corresponding to one column of data.
 Tips Points and Recommendation:
 The use of worsleyM is recommended.
