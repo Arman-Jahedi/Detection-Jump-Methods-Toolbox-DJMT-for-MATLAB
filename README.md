@@ -17,7 +17,7 @@ The 'SNHTM' function is capable of performing the SNHT on one or multiple time s
 The 'SNHT' function can only be applied to a Sample time series.
 
 >>  Tip points and recommendation:
->> 
+
 It is strongly recommended to use the 'SNHTM' function instead of the 'SNHT'. 
 When using 'SNHTM function, make sure that the folder containing the function is added to the MATLAB search path.
 Users should be writing own matrix name in Workspace environment instead of 'var'. 
@@ -36,7 +36,7 @@ The application of this method to a time series matrix in the MATLAB Command Win
 The function CUMDEVM is designed for application to a data matrix containing one or multiple time series (with n series organized in columns).
 
 >> [Q,QMAX]=CUMDEVS(var);
->> 
+
 However, the CUMDEVS function is designed for application to a Sample time series, corresponding to one column of the data matrix.
 
 Tips Points and Recommendation:
@@ -49,11 +49,13 @@ Building on the explanation of how the Worsley likelihood ration test operates o
 This test can also be executed directly in the Command Window as follows:
 
 >> [V,W]=worsleyM(var);
+
 The function worsleyM can be applied to any matrix, whether it contains a Sample time series or a very large number of time series.
->> 
+
 >> [V,W]=worsleyS(var);
->> 
+
 Whereas the worsleyS function can only be applied to a Sample time series, corresponding to one column of data.
+
 Tips Points and Recommendation:
 The use of worsleyM is recommended.
 By applying the worsleyM function to a matrix containing one or more time series returns two output matrices to the Workspace: V and W.
