@@ -45,6 +45,7 @@ The use of the CUMDEVM function is recommended for most applications. Users shou
 Upon completion of the CDT, the CUMDEVM function returns two variables in the MATLAB Workspace: Q and QMAX. The variable Q contains the calculated test statistics for all of time series in the input matrix. The variable QMAX contains the maximum absolute test statistic for each time series, normalized by the square root of the corresponding sample size (Q/√n). These values can subsequently be compared with the critical values reported by Buishand (1982) to assess the homogeneity of the time series.
 
 Performing worsleyS and worsleyM Functions:
+
 Building on the explanation of how the Worsley likelihood ration test operates on time series data, two functions have been developed: worsleyS and worsleyM. These functions perform the Worsley test calculations on 1 to 'n' time series. The function name worsleyS is derived from Worsley combined with the first letter of Sample. Similarly, an effort has been made to maintain naming consistency with other test functions. The function worsleyM follows the same pattern, except that its last letter is taken from the word Matrix.
 This test can also be executed directly in the Command Window as follows:
 
