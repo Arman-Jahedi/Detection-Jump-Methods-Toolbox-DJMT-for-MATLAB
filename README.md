@@ -16,7 +16,7 @@ The 'SNHTM' function is capable of performing the SNHT on one or multiple time s
 >> 
 The 'SNHT' function can only be applied to a Sample time series.
 
->>  Tip points and recommendation:
+Tip points and recommendation:
 
 It is strongly recommended to use the 'SNHTM' function instead of the 'SNHT'. 
 When using 'SNHTM function, make sure that the folder containing the function is added to the MATLAB search path.
@@ -32,7 +32,7 @@ In this toolbox, two MATLAB function were developed to implement the CDT: CUMDES
 The application of this method to a time series matrix in the MATLAB Command Window is illustrated in below:
 
 >> [Q,QMAX]=CUMDEVM(var);
->> 
+
 The function CUMDEVM is designed for application to a data matrix containing one or multiple time series (with n series organized in columns).
 
 >> [Q,QMAX]=CUMDEVS(var);
