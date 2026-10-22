@@ -58,6 +58,7 @@ The function worsleyM can be applied to any matrix, whether it contains a Sample
 Whereas the worsleyS function can only be applied to a Sample time series, corresponding to one column of data.
 
 Tips Points and Recommendation:
+
 The use of worsleyM is recommended.
 By applying the worsleyM function to a matrix containing one or more time series returns two output matrices to the Workspace: V and W.
 The matrix 'V' contains the maximum absolute test statistic for each time series, while 'W' contains the final test statistic value to be compared against the critical values in the reference table for hypothesis testing.
