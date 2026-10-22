@@ -41,6 +41,7 @@ Tips Points and Recommendation:
 The use of worsleyM is recommended.
 By applying the worsleyM function to a matrix containing one or more time series returns two output matrices to the Workspace: V and W.
 The matrix 'V' contains the maximum absolute test statistic for each time series, while 'W' contains the final test statistic value to be compared against the critical values in the reference table for hypothesis testing.
+
 Note: 
 1. To use these functions correctly, first add them to the MATLAB environment. Navigate to the folder containing the functions (DJMT) in the Current Folder window, right-click on the folder, select Add to Path, and then choose Selected Folders and Subfolders. This step ensures that MATLAB can recognize the functions. Failure to do so will result in an 'Undefined function' error.
 2. Also, the best way for installing all of functions designed is using the toolbox with named 'Detection Jumps Methods Toolbox for MATLAB' with the '.mltbx' format. This toolbox is capable installing on your MATLAB toolbox, like other toolbox in your MATLAB programming. Just download it and puts it on New Folder and then installing it on your MATLAB toolbox.
