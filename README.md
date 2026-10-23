@@ -47,7 +47,7 @@ Upon completion of the CDT, the CUMDEVM function returns two variables in the MA
 Performing worsleyS and worsleyM Functions:
 
 Building on the explanation of how the Worsley likelihood ration test operates on time series data, two functions have been developed: worsleyS and worsleyM. These functions perform the Worsley test calculations on 1 to 'n' time series. The function name worsleyS is derived from Worsley combined with the first letter of Sample. Similarly, an effort has been made to maintain naming consistency with other test functions. The function worsleyM follows the same pattern, except that its last letter is taken from the word Matrix.
-This test can also be executed directly in the Command Window as follows:
+This test can also be executed directly in the MATLAB Command Window as follows:
 
 >> [V,W]=worsleyM(var);
 
@@ -65,6 +65,6 @@ The matrix 'V' contains the maximum absolute test statistic for each time series
 
 Note: 
 1. To use these functions correctly, first add them to the MATLAB environment. Navigate to the folder containing the functions in the Current Folder window, right-click on the folder, select Add to Path, and then choose Selected Folders and Subfolders. This step ensures that MATLAB can recognize the functions. Failure to do so will result in an 'Undefined function' error.
-2. Also, the best way for installing all of functions designed is using the toolbox with named 'Detection Jumps Methods Toolbox for MATLAB' with the '.mltbx' format. This toolbox is capable installing on your MATLAB toolbox, like other toolbox in your MATLAB programming. Just download it and puts it on New Folder and then installing it on your MATLAB toolbox.
+2. Also, the best way for installing all of functions designed is using the toolbox with named 'Detection Jumps Methods Toolbox for MATLAB' with the '.mltbx' format. This toolbox is capable installing on your MATLAB toolbox, like other toolbox in your MATLAB programming. Just download it and puts it on New Folder and then installing (right click on the toolbox item, and select the install) it on your MATLAB toolbox.
 
 
