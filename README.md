@@ -68,6 +68,6 @@ Note:
 2. Also, the best way for installing all of functions designed is using the toolbox with named 'Detection Jumps Methods Toolbox for MATLAB' with the '.mltbx' format. This toolbox is capable installing on your MATLAB toolbox, like other toolbox in your MATLAB programming. Just download it and puts it on New Folder and then installing (right click on the toolbox item, and select the install) it on your MATLAB toolbox.
 
 
-The Detection Jump Methods Toolbox for MATLAB is implemented by Dr. Hossein Asakereh, and Arman Jahedi, Department of Climatology, University of Zanjan.
-Contact Ways: jahediarman@yahoo.com
+The Detection Jump Methods Toolbox for MATLAB had implemented by Dr. Hossein Asakereh, and Arman Jahedi, Department of Climatology, University of Zanjan.
+Contact Way: jahediarman@yahoo.com
 
